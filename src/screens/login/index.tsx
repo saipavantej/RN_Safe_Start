@@ -119,7 +119,7 @@ const Login = ({navigation}: Props) => {
                   }}>
                   <Text style={styles.noAccountYet}>{'No account yet? '}</Text>
                   <TouchableOpacity
-                    onPress={() => navigation.replace('SignUp')}>
+                    onPress={() => navigation.navigate('SignUp')}>
                     <Text style={styles.createAccount}>Create one here</Text>
                     <View style={styles.underline} />
                   </TouchableOpacity>
