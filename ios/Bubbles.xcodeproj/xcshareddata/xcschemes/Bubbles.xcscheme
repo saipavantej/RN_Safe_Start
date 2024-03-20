@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Safe_start.app"
-               BlueprintName = "Safe_start"
-               ReferencedContainer = "container:Safe_start.xcodeproj">
+               BuildableName = "Bubbles.app"
+               BlueprintName = "Bubbles"
+               ReferencedContainer = "container:Bubbles.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "Safe_startTests.xctest"
-               BlueprintName = "Safe_startTests"
-               ReferencedContainer = "container:Safe_start.xcodeproj">
+               BuildableName = "BubblesTests.xctest"
+               BlueprintName = "BubblesTests"
+               ReferencedContainer = "container:Bubbles.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Safe_start.app"
-            BlueprintName = "Safe_start"
-            ReferencedContainer = "container:Safe_start.xcodeproj">
+            BuildableName = "Bubbles.app"
+            BlueprintName = "Bubbles"
+            ReferencedContainer = "container:Bubbles.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Safe_start.app"
-            BlueprintName = "Safe_start"
-            ReferencedContainer = "container:Safe_start.xcodeproj">
+            BuildableName = "Bubbles.app"
+            BlueprintName = "Bubbles"
+            ReferencedContainer = "container:Bubbles.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
