@@ -1,4 +1,4 @@
-package com.safe_start
+package com.bubbles.app
 
 import android.app.Application
 import com.facebook.react.PackageList
