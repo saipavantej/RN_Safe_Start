@@ -5,23 +5,12 @@ import {RootStackParamList} from '@constants/routes';
 import BootSplash from 'react-native-bootsplash';
 import AuthStack from './AuthStack';
 import MainStack from './MainStack';
-import {navigationRef, replace} from './NavService';
-import {getItem} from '@utils/asyncStorage';
-import {setUserIdFromAsyncStore} from '../features/userSlice';
-import {useAppDispatch} from '@hooks/index';
+import {navigationRef} from './NavService';
 
 const RootNavigation = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
-  const dispatch = useAppDispatch();
 
-  const init = async () => {
-    await getItem('userId').then(user_id =>
-      dispatch(setUserIdFromAsyncStore(user_id)),
-    );
-    await getItem('token').then(e =>
-      e ? replace('MainStack') : replace('AuthStack'),
-    );
-  };
+  const init = async () => {};
 
   const onNavigationReady = () => {
     init().finally(() => {

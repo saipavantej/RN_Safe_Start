@@ -1,7 +1,7 @@
 import {MainStackParamList} from '@constants/routes';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Main from '@screens/Main';
 import React from 'react';
-import {AppDrawer} from './Drawer';
 
 const Stack = createNativeStackNavigator<MainStackParamList>();
 
@@ -11,9 +11,9 @@ const MainStack = (_params: Params) => {
   return (
     <>
       <Stack.Navigator
-        initialRouteName={'DrawerScreens'}
+        initialRouteName={'Main'}
         screenOptions={{animation: 'ios', headerShown: false}}>
-        <Stack.Screen name="DrawerScreens" component={AppDrawer} />
+        <Stack.Screen name="Main" component={Main} />
       </Stack.Navigator>
     </>
   );

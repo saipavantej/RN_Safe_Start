@@ -9,10 +9,11 @@ import PageView from '@components/pageView';
 import {CUSTOM_FONT} from '@constants/fonts';
 import {Color} from '@constants/colors';
 import AppButton from '@components/appButton/AppButton';
+import {replace} from '@navigation/NavService';
 
 type Props = NativeStackScreenProps<AuthStackParamList, 'Welcome'>;
 
-const Welcome = ({navigation}: Props) => {
+const Welcome = (_props: Props) => {
   return (
     <PageView backgroundColor="WHITE" type={'withHeader'} safeAreaView>
       <ScrollView
@@ -35,15 +36,9 @@ const Welcome = ({navigation}: Props) => {
           resizeMode="contain"
         />
         <Spacer direction="vertical" size={scaleHeight(26)} />
-        <AppButton
-          name="Sign In"
-          onPress={() => navigation.navigate('Login')}
-        />
+        <AppButton name="Sign In" onPress={() => replace('MainStack')} />
         <Spacer direction="vertical" size={scaleHeight(26)} />
-        <AppButton
-          name="Sign Up"
-          onPress={() => navigation.navigate('SignUp')}
-        />
+        <AppButton name="Sign Up" onPress={() => replace('MainStack')} />
         <Spacer size={scaleHeight(20)} />
       </ScrollView>
     </PageView>
